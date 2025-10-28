@@ -18,21 +18,99 @@ h1 {
     font-size: 3em;       /* povećava veličinu naslova */
     text-align: center;   /* centrira naslov horizontalno */
     margin-top: 50px;     /* opcionalno: razmak od vrha stranice */
+	margin-bottom: 90px;
 }
 p {
     font-size: 1.2em;  /* povećava font za par nijansi */
 
     margin: 20px 0;    /* dodaje razmak iznad i ispod paragrafa */
+	}
+.cozy {
+  list-style: none;      /* uklanja standardne bullets */
+  margin: 0;
+}
+
+.cozy > li {
+  display: inline-block; /* prikaz stavki horizontalno */
+  vertical-align: top;
+  margin-right: 20px;    /* razmak između kvadrata */
+}
+
+.cozy li ul {
+  display: block;         /* unutarnji popisi ostaju vertikalni */
+  margin-top: 5px;
+  padding-left: 20px;     /* pomak unutarnjih stavki */
+  border: none;
+}
+
+.recept {
+  float: right;      /* cijeli blok ide desno */
+  width: 40%;        /* širina recepta (prilagodi po želji) */
+  margin-left: 20px; /* razmak od lijevog sadržaja */
+}
+p:first-of-type {
+  margin-bottom: 90px; /* razmak nakon prvog paragrafa */
 }
 </style>
 </head>
 <body>
     <h1>Dolazi zima, a gdje ćeš ti?</h1>
-    <p>Zimsko doma kao da svake godine dođe ranije nego prethodne.<br>
+    <p><span style="color: maroon;"><strong>Zimsko doba kao da svake godine dođe ranije nego prethodne.<br>
 	Često se onda u njoj nađem nespremna, neznajući gdje da odem <br>
 	i što da radim tokom hladnih zimskih noći. <br>
 	Zato sam ove godine odlučila na vrijeme istražiti sve zanimljive<br>
 	lokacije i prigode koje ću moći posijetiti i predstaviti<br>
-	ih na ovoj web stranici. 	</p>
+	ih na ovoj web stranici. 	</p></strong></span>
+	
+	<p>Započet ćemo sa popisom najboljih <strong>cozy</strong> kafića gdje se možeš <br>
+	opustiti uz jednu vruću čokoladu ili kuhano vino te uživati u božićnom ugođaju <sup>;)</sup></p>
+	<ul class="cozy">
+	<li>
+    <strong>Program bar</strong>
+    <ul>
+      <li>jako zanimljivo uređen interijer</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Pod starim krovovima</strong>
+    <ul>
+      <li>domaća atmosfera</li>
+      <li>živa muzika</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Swanky monkey</strong>
+    <ul>
+      <li>posebni interijer</li>
+      <li>veliki prostor</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Backstage bar</strong>
+    <ul>
+      <li>domaća atmosfera</li>
+    </ul>
+  </li>
+</ul>
+<div class="recept">	
+<p>Slatki kutak! Evo recepta za moje najdraže božićne kolačiće; <strong><em>Raspucance!</em></strong></p>
+<ol>
+<li>Otopi nasjeckanu čokoladu (200<sub>g</sub>)</li>
+<li>Promiješaj glatko brašno (200<sub>g</sub>), prstohvat soli i prašak za pecivo</li>
+<li>Umuti maslac(60<sub>g</sub>)</li> sobne temp sa šećerom(100<sub>g</sub>) i ekstraktom vanilije</li>
+<li>Dodaj otopljenu čokoladu i promješaj</li>
+<li>Dodavaj jedno po jedno jaje (2) i kratko zamuti</li>
+<li>Dodajte brašno u smjesu i dobro izmiješajte. Pokrijte i ostavite u hladnjaku najmanje 3 sata ili preko noći.</li>
+<li>Uključite pećnicu na 180°C. Žličicom grabite tijesto i oblikujte dlanovima kuglice</li>
+<li>Stavite kristal šećer u jednu zdjelicu, a šećer u prahu u drugu. Svaku kuglicu prvo <br>
+urolajte u kristal šećer, a zatim obilno prekrijte šećerom u prahu (ne otresajte višak). <br>
+Sloj kristal šećera služi da spriječi da se šećer u prahu previše navlaži od tijesta i na<br>
+ taj način će onaj crno bijeli efekt na ispečenim keksima biti izraženiji.</li>
+ <li>Stavljajte kuglice malo razmaknute na pleh obložen papirom za pečenje i <br>
+ pecite u zagrijanoj pećnici 8-10 minuta. Moraju biti još uvijek mekani kad ih izvadite.<br>
+ Nipošto ih nemojte prepeći jer će postati suhi.<br>
+ Prebacite ih na rešetku da se ohlade i onda uživajte.</li>
+</ol>
+</div>
 </body>
 </html>
