@@ -12,55 +12,105 @@
   font-style: normal;
 }
  body {
-            background-color: beige; /* postavlja bež pozadinu */
+            background-color: beige; 
         }
 h1 {
-    font-size: 3em;       /* povećava veličinu naslova */
-    text-align: center;   /* centrira naslov horizontalno */
-    margin-top: 50px;     /* opcionalno: razmak od vrha stranice */
+    font-size: 4em;       
+    text-align: center;   
+    margin-top: 50px;     
 	margin-bottom: 90px;
 }
 p {
-    font-size: 1.2em;  /* povećava font za par nijansi */
+    font-size: 1.5em;  
 
-    margin: 20px 0;    /* dodaje razmak iznad i ispod paragrafa */
+    margin: 20px 0;   
 	}
 .cozy {
-  list-style: none;      /* uklanja standardne bullets */
+  list-style: none;      
   margin: 0;
 }
 
 .cozy > li {
-  display: inline-block; /* prikaz stavki horizontalno */
+  display: inline-block; 
   vertical-align: top;
-  margin-right: 20px;    /* razmak između kvadrata */
+  margin-right: 20px;    
 }
 
 .cozy li ul {
-  display: block;         /* unutarnji popisi ostaju vertikalni */
+  display: block;         
   margin-top: 5px;
-  padding-left: 20px;     /* pomak unutarnjih stavki */
+  padding-left: 20px;     
   border: none;
 }
 
 .recept {
-  float: right;      /* cijeli blok ide desno */
-  width: 40%;        /* širina recepta (prilagodi po želji) */
-  margin-left: 20px; /* razmak od lijevog sadržaja */
+  position: absolute;  
+  top: 220px;           
+  right: 20px;         
+  width: 40%;          
 }
-p:first-of-type {
-  margin-bottom: 90px; /* razmak nakon prvog paragrafa */
+
+
+
+
+#dogadaji {
+  width: 50%;              
+  margin: 30px auto;       
+  border-collapse: collapse; 
+  border-radius: 10px;      
+  overflow: hidden;         
+  font-family: "Slabo 27px", serif;
 }
+
+
+#dogadaji thead th {
+  background-color: saddlebrown; 
+  color: beige;                  
+  padding: 12px;
+  border: 1px solid #5c2a21;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+#dogadaji tbody th {
+  background-color: #f4e0d0; 
+  padding: 10px;
+  border: 1px solid #5c2a21;
+}
+
+
+#dogadaji tbody td {
+  border: 1px solid #5c2a21;
+  padding: 15px;
+  text-align: center;
+  vertical-align: top;
+  background-color: #fff8f0; 
+  height: 120px;             
+}
+
+
+#dogadaji tbody tr:nth-child(even) td {
+  background-color: #f9ede4;
+}
+
+
+.naslov-tablice {
+  text-align: center;
+  color: saddlebrown;
+  margin-top: 40px;
+  font-size: 2em;
+}
+
 </style>
 </head>
 <body>
     <h1>Dolazi zima, a gdje ćeš ti?</h1>
     <p><span style="color: maroon;"><strong>Zimsko doba kao da svake godine dođe ranije nego prethodne.<br>
-	Često se onda u njoj nađem nespremna, neznajući gdje da odem <br>
-	i što da radim tokom hladnih zimskih noći. <br>
-	Zato sam ove godine odlučila na vrijeme istražiti sve zanimljive<br>
-	lokacije i prigode koje ću moći posijetiti i predstaviti<br>
-	ih na ovoj web stranici. 	</p></strong></span>
+	Često se onda u njoj nađem nespremna, neznajući gdje da odem i što da radim tokom hladnih zimskih noći. <br>
+	Zato sam ove godine odlučila na vrijeme istražiti sve zanimljive lokacije i prigode koje ću moći posijetiti i <br>
+	predstaviti ih na ovoj web stranici. 	</p></strong></span>
+	<br>
 	
 	<p>Započet ćemo sa popisom najboljih <strong>cozy</strong> kafića gdje se možeš <br>
 	opustiti uz jednu vruću čokoladu ili kuhano vino te uživati u božićnom ugođaju <sup>;)</sup></p>
@@ -112,6 +162,58 @@ Sloj kristal šećera služi da spriječi da se šećer u prahu previše navlaž
  Prebacite ih na rešetku da se ohlade i onda uživajte.</li>
 </ol>
 </div>
+
+<br>
+<br>
+<br>
+
+<h2 class="naslov-tablice">Događanja u Zagrebu ovaj tjedan</h2>
+<p>Zagreb je pun kulturnih događanja, ovdje sam izdvojila samo neke.<br>
+Na ovom linku ožeš i ti pregledati kulturne događaje i za druge datume:<br>
+<a href="https://www.kulturauzagrebu.hr/kalendar/" target=_blank>LINK</a>
+</p>
+<table id="dogadaji">
+<thead>
+<tr>
+  <th colspan="7">10.11. - 16.11.</th>
+   
+</tr>
+</thead>
+<tbody>
+  <tr>
+  <th>PON</th>
+  <th>UTO</th>
+  <TH>SRI</TH>
+  <TH>ČET</TH>
+  <TH>PET</TH>
+  <TH>SUB</TH>
+  <TH>NED</TH>
+  </tr>
+  <TR>
+  <td>ZAGREB FILM FESTIVAL <br>
+  "the stranger" - 18:00 <br>
+  @KinoKinoteka</td>
+  <td>NO JAZZ FESTIVAL<BR>
+  "Preoccupations" - 20:00 <BR>
+  @Vintage Industrial Bar</td>
+  <td>INTERLIBER<BR>
+  10:00 - 20:00 <br>
+  @Zagrebački Velesajam</td>
+  <td>IZLOŽBA "MATRIX" <BR>
+  "Lucija žuti" - 19:00<br>
+  @Likovni centar Grada Zagreba</td>
+  <td>STAND-UP<BR>
+  "Pazi novo!" - 20:30<br>
+  @Grey caffe bar</td>
+  <td>PREDSTAVA<br>
+  "Penzići luduju" - 20:00<br>
+  @Histrionski dom</td>
+  <td>ODMOR<BR>
+  10:00 - 10:00<br>
+  @doma</td>
+  <td rowspan="1">:)</td>
+  </TR>
+  </tbody>
 </body>
 </html>
 
